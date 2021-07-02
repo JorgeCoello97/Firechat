@@ -1,14 +1,14 @@
 # FireChat `[DEPRECATED]`
 <img  src="./firechat.jpg"/>
 
-##Description
+## Description
 Created in 2017. 
 
 Testing Firebase as BaaS in a simple application.
 
-##Targets
+## Targets
 * Test Firebase Authentication
 * Test Firebase Database Realtime   
 
-##Knowledge obtained
+## Knowledge obtained
 * Know to use Firebase
