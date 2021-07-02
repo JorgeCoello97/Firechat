@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusable="false"
+    tools:context="com.jorch.proyecto.firechat.ui.Login">
+
+    <ImageView
+        android:id="@+id/img_Login_logo"
+        android:layout_width="295dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="37dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="266dp"
+        android:layout_height="301dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Login_logo"
+        app:layout_constraintVertical_bias="0.144">
+
+        <RelativeLayout
+            android:layout_width="266dp"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/et_Login_password"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/et_Login_nickname"
+                android:layout_below="@+id/et_Login_nickname"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@+id/et_Login_nickname"
+                tools:layout_editor_absoluteX="34dp" />
+
+            <Button
+                android:id="@+id/bttn_Login_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_Login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="SIGN IN"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_Login_password" />
+
+            <EditText
+                android:id="@+id/et_Login_nickname"
+                android:layout_width="230dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="Nickname"
+                android:inputType="text"
+                android:singleLine="true"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="246dp" />
+
+            <View
+                android:id="@+id/separator_Login_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bttn_Login_signin"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/bttn_Login_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator_Login_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="SIGN UP"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator_Login_1" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
